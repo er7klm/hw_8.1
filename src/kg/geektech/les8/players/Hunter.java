@@ -1,5 +1,7 @@
 package kg.geektech.les8.players;
 
+import java.util.Random;
+
 public class Hunter extends Hero {
 
     public Hunter(int damage, int health, String name) {
@@ -8,10 +10,8 @@ public class Hunter extends Hero {
 
     @Override
     public void applySuperAbility(Boss boss, Hero[] heroes) {
-        for (int i = 0; i < heroes.length; i++) {
-            if (heroes[i].getAbility() == SuperAbility.SAVE_DAMAGE_AND_REVERT) {
-                heroes[i].setDamage(heroes[i].getDamage() + (boss.getDamage() / 5));
-            }
+        if (heroes[4].getHealth() > 0) {
+            heroes[4].setDamage(20 + (boss.getDamage() / 5));
         }
     }
 }

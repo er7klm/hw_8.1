@@ -4,13 +4,13 @@ import kg.geektech.les8.players.*;
 
 public class RPG_Game {
     public static void start() {
-        Boss boss = new Boss(50, 1500);
+        Boss boss = new Boss(50, 1000);
         Warrior warrior = new Warrior(15, 250, "Warrior");
         Magic magic = new Magic(15, 250, "Joldow-Alladin");
         Medic medic = new Medic(0, 230, 30, "Aibolit");
         Medic youngMedic = new Medic(0, 260, 10, "Med brat");
-        Hunter hunter = new Hunter(25, 270, "Hunter");
-        Thor thor = new Thor(20, 300, "Thor");
+        Hunter hunter = new Hunter(20, 270, "Hunter");
+        Thor thor = new Thor(20, 250, "Thor");
 
         Hero[] heroes = {warrior, magic, medic, youngMedic, hunter, thor};
 

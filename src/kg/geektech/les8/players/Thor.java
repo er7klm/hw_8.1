@@ -11,7 +11,7 @@ public class Thor extends Hero {
     @Override
     public void applySuperAbility(Boss boss, Hero[] heroes) {
         Random random = new Random();
-        int rnd = random.nextInt(2);
+        int rnd = random.nextInt(1);
         if (rnd == 1) {
             for (int i = 0; i < heroes.length; i++) {
                 heroes[i].setHealth(heroes[i].getHealth() + boss.getDamage());
